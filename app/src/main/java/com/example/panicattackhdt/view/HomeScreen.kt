@@ -225,7 +225,7 @@ fun HomeScreen(navController: NavController, hr: Int) {
                                 .fillMaxSize()
                         ) {
                             Text(
-                                text = "123",
+                                text = "${records.size}",
                                 style = Typography.titleLarge,
                                 color = Color(0xFF155dfc)
                             )
@@ -254,7 +254,13 @@ fun HomeScreen(navController: NavController, hr: Int) {
                                 .fillMaxSize()
                         ) {
                             Text(
-                                text = "123",
+                                text = "${
+                                    records
+                                        .filter {
+                                            it.startTime.isAfter(LocalDateTime.now().minusDays(30)) && it.startTime.isBefore(LocalDateTime.now())
+                                        }
+                                        .size
+                                }",
                                 style = Typography.titleLarge,
                                 color = Color(0xFF9810fa)
                             )
@@ -283,7 +289,7 @@ fun HomeScreen(navController: NavController, hr: Int) {
                                 .fillMaxSize()
                         ) {
                             Text(
-                                text = "123",
+                                text = "${records.map { it.severity }.average()}",
                                 style = Typography.titleLarge,
                                 color = Color(0xFFf54900)
                             )

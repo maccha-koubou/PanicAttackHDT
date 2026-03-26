@@ -10,6 +10,66 @@
     "peak": 150
   },
   {
+    "startTime": "2026-01-31T17:40:00",
+    "endTime": "2026-01-31T17:50:00",
+    "severity": 2,
+    "symptoms": ["RAPID_HEART_RATE"],
+    "trigger": "Crowded train",
+    "location": "Station",
+    "notes": "Some notes",
+    "peak": 135
+  },
+  {
+    "startTime": "2026-02-05T15:40:00",
+    "endTime": "2026-02-05T15:50:00",
+    "severity": 6,
+    "symptoms": ["RAPID_HEART_RATE"],
+    "trigger": "Crowded train",
+    "location": "Station",
+    "notes": "Some notes",
+    "peak": 155
+  },
+  {
+    "startTime": "2026-02-17T08:40:00",
+    "endTime": "2026-02-17T08:50:00",
+    "severity": 4,
+    "symptoms": ["RAPID_HEART_RATE"],
+    "trigger": "Crowded train",
+    "location": "Station",
+    "notes": "Some notes",
+    "peak": 145
+  },
+  {
+    "startTime": "2026-03-01T12:20:00",
+    "endTime": "2026-03-01T12:30:00",
+    "severity": 8,
+    "symptoms": ["RAPID_HEART_RATE"],
+    "trigger": "Crowded train",
+    "location": "Station",
+    "notes": "Some notes",
+    "peak": 175
+  },
+  {
+    "startTime": "2026-03-08T19:10:00",
+    "endTime": "2026-03-08T19:20:00",
+    "severity": 2,
+    "symptoms": ["RAPID_HEART_RATE"],
+    "trigger": "Crowded train",
+    "location": "Station",
+    "notes": "Some notes",
+    "peak": 95
+  },
+  {
+    "startTime": "2026-03-21T14:40:00",
+    "endTime": "2026-03-21T14:50:00",
+    "severity": 5,
+    "symptoms": ["RAPID_HEART_RATE"],
+    "trigger": "Crowded train",
+    "location": "Station",
+    "notes": "Some notes",
+    "peak": 125
+  },
+  {
     "startTime": "2026-03-25T11:00:00",
     "endTime": "2026-03-25T11:10:00",
     "severity": 8,

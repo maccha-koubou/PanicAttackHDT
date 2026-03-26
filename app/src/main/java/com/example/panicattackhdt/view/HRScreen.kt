@@ -64,7 +64,7 @@ import java.time.format.DateTimeFormatter
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HRScreen(navController: NavController) {
-    val records = remember { DataStorage.getAll() }
+    val records = remember { DataStorage.getAll().takeLast(7) }
     val peakList = records.map { it.peak }
     val dateList = records.map { it.startTime.format(DateTimeFormatter.ofPattern("MMM dd")) }
 
@@ -169,17 +169,17 @@ fun getValueBasedColumnProvider() =
     object : ColumnCartesianLayer.ColumnProvider {
         val low = rememberLineComponent(
             fill = Fill(Color(0xFF00d368).toArgb()),
-            thickness = 4.dp,
+            thickness = 16.dp,
             shape = CorneredShape.rounded(16),
         )
         val medium = rememberLineComponent(
             fill = Fill(Color(0xFFffbf00).toArgb()),
-            thickness = 4.dp,
+            thickness = 16.dp,
             shape = CorneredShape.rounded(16),
         )
         val high = rememberLineComponent(
             fill = Fill(Color(0xFFE40000).toArgb()),
-            thickness = 4.dp,
+            thickness = 16.dp,
             shape = CorneredShape.rounded(16),
         )
 

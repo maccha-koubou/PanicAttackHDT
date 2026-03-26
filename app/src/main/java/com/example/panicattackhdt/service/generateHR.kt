@@ -7,7 +7,7 @@ fun generateHR(t: Int): Int {
     val max = 160
     val medium = (max + min) / 2f
     val halfWaveHeight = (max - min) / 2f
-    val period = 300f
+    val period = 120f // Unit: second
 
     return (medium + halfWaveHeight * sin(2 * Math.PI * t / period - Math.PI / 2)).toInt()
 }
