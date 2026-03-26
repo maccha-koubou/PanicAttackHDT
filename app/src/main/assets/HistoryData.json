@@ -1,0 +1,22 @@
+[
+  {
+    "startTime": "2026-01-25T09:00:00",
+    "endTime": "2026-01-25T09:10:00",
+    "severity": 5,
+    "symptoms": ["RAPID_HEART_RATE", "CHEST_PAIN"],
+    "trigger": "Work presentation",
+    "location": "Office",
+    "notes": "Some notes",
+    "peak": 150
+  },
+  {
+    "startTime": "2026-03-25T11:00:00",
+    "endTime": "2026-03-25T11:10:00",
+    "severity": 8,
+    "symptoms": ["RAPID_HEART_RATE"],
+    "trigger": "Crowded train",
+    "location": "Station",
+    "notes": "Some notes",
+    "peak": 165
+  }
+]
